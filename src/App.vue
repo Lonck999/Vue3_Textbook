@@ -18,6 +18,9 @@
     <div>
       <VOn />
     </div>
+    <div>
+      <Ref />
+    </div>
   </div>
 </template>
 
@@ -28,6 +31,7 @@ import VIf from "./components/03_v-if_v-else-if_v-else/index.vue";
 import VShow from "./components/04_v-show/index.vue";
 import VFor from "./components/05_v-for/index.vue";
 import VOn from "./components/06_v-on/index.vue";
+import Ref from "./components/07_ref/index.vue";
 </script>
 
 <style scoped>
