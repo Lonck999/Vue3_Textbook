@@ -12,6 +12,11 @@
       {{ index + 1 }}. {{ name }}: {{ value }}
     </div>
   </div>
+  <div>
+    <ul v-for="num in 10" :key="num">
+      <li>{{ num }}</li> 
+    </ul>
+  </div>
 </template>
 <script setup>
 import { ref } from "vue";

@@ -15,6 +15,9 @@
     <div>
       <VFor />
     </div>
+    <div>
+      <VOn />
+    </div>
   </div>
 </template>
 
@@ -24,11 +27,13 @@ import VModel from "./components/02_v-model/index.vue";
 import VIf from "./components/03_v-if_v-else-if_v-else/index.vue";
 import VShow from "./components/04_v-show/index.vue";
 import VFor from "./components/05_v-for/index.vue";
+import VOn from "./components/06_v-on/index.vue";
 </script>
 
 <style scoped>
 .content {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
 }
 </style>
