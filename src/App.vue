@@ -27,6 +27,9 @@
     <div>
       <ToRef />
     </div>
+    <div>
+      <Computed />
+    </div>
   </div>
 </template>
 
@@ -40,6 +43,7 @@ import VOn from "./components/06_v-on/index.vue";
 import Ref from "./components/07_ref/index.vue";
 import Reactive from "./components/08_reactive/index.vue";
 import ToRef from "./components/09_toRef_toRefs/index.vue";
+import Computed from "./components/10_computed/index.vue";
 </script>
 
 <style scoped>
