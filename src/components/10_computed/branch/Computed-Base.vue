@@ -16,7 +16,14 @@ const clickAdd = () => {
   num.value++;
 };
 
-const doubleNum = computed(() => num.value * 2);
+const doubleNum = computed({
+  get: () => {
+    return num.value * 2;
+  },
+  set: (val) => {
+    num.value = val / 2;
+  },
+});
 </script>
 
 <style scoped></style>

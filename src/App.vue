@@ -30,6 +30,9 @@
     <div>
       <Computed />
     </div>
+    <div>
+      <Watch />
+    </div>
   </div>
 </template>
 
@@ -44,6 +47,7 @@ import Ref from "./components/07_ref/index.vue";
 import Reactive from "./components/08_reactive/index.vue";
 import ToRef from "./components/09_toRef_toRefs/index.vue";
 import Computed from "./components/10_computed/index.vue";
+import Watch from "./components/11_watch/index.vue";
 </script>
 
 <style scoped>

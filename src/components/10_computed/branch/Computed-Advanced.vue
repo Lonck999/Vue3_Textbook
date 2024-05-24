@@ -20,6 +20,7 @@ const twd = computed({
   },
   // 更新template顯示的部分
   set(newTwd) {
+    console.log(newTwd);
     jpy.value = newTwd / 0.269;
   },
 });
