@@ -33,6 +33,34 @@
     <div>
       <Watch />
     </div>
+    <div>
+      <WatchEffect />
+    </div>
+    <div>
+      <DefineExpose />
+    </div>
+    <div>
+      <DefineEmits />
+    </div>
+    <div>
+      <h1>父傳子</h1>
+      <div class="props">
+        <h2>父層</h2>
+        <p>{{ persons[0].from }}</p>
+        <p>{{ persons[0].name }}</p>
+        <p>{{ persons[0].age }}</p>
+      </div>
+      <DefineProps :p="persons" />
+    </div>
+    <div>
+      <Lifecycle />
+    </div>
+    <div>
+      <Hook />
+    </div>
+    <div>
+      <router />
+    </div>
   </div>
 </template>
 
@@ -48,6 +76,20 @@ import Reactive from "./components/08_reactive/index.vue";
 import ToRef from "./components/09_toRef_toRefs/index.vue";
 import Computed from "./components/10_computed/index.vue";
 import Watch from "./components/11_watch/index.vue";
+import WatchEffect from "./components/12_watchEffect/index.vue";
+import DefineEmits from "./components/13_defineEmits子傳父/index.vue";
+import DefineExpose from "./components/14_defineExpose子傳父/index.vue";
+import DefineProps from "./components/15_defineProps父傳子/index.vue";
+import Lifecycle from "./components/16_lifecycle/index.vue";
+import Hook from "./components/17_自定義hook/index.vue";
+import router from "./components/18_vue-router/index.vue";
+import { reactive } from "vue";
+
+const persons = reactive([
+  { from: "爸爸給的", name: "John", age: 20 },
+  { from: "爸爸給的", name: "Tom", age: 25 },
+  { from: "爸爸給的", name: "Jane", age: 30 },
+]);
 </script>
 
 <style scoped>
@@ -55,5 +97,9 @@ import Watch from "./components/11_watch/index.vue";
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 40px;
+}
+
+.props {
+  border: 1px solid #000;
 }
 </style>
