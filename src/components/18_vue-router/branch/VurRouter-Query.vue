@@ -1,6 +1,6 @@
 <template>
   <div class="app">
-    <h1>Base</h1>
+    <h1>Query傳參</h1>
     <h2 class="title">Vue入由測試</h2>
     <div class="navigate">
       <RouterLink to="/home" active-class="active"> 首頁 </RouterLink>

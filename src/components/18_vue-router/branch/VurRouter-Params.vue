@@ -1,10 +1,10 @@
 <template>
   <div class="app">
-    <h1>Base</h1>
+    <h1>Params傳參</h1>
     <h2 class="title">Vue入由測試</h2>
     <div class="navigate">
       <RouterLink to="/home" active-class="active"> 首頁 </RouterLink>
-      <RouterLink :to="{ name: 'news' }" active-class="active">
+      <RouterLink :to="{ name: 'news-params' }" active-class="active">
         新聞
       </RouterLink>
       <RouterLink :to="{ path: '/about' }" active-class="active">
