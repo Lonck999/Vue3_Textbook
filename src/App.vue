@@ -59,7 +59,7 @@
       <Hook />
     </div>
     <div>
-      <router />
+      <Router />
     </div>
   </div>
 </template>
@@ -82,7 +82,7 @@ import DefineExpose from "./components/14_defineExpose子傳父/index.vue";
 import DefineProps from "./components/15_defineProps父傳子/index.vue";
 import Lifecycle from "./components/16_lifecycle/index.vue";
 import Hook from "./components/17_自定義hook/index.vue";
-import router from "./components/18_vue-router/index.vue";
+import Router from "./components/18_vue-router/index.vue";
 import { reactive } from "vue";
 
 const persons = reactive([
