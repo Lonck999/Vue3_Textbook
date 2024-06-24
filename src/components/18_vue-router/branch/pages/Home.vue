@@ -5,7 +5,18 @@
 </template>
 
 <script setup>
-import {} from "vue";
+import { useRouter } from "vue-router";
+import { onMounted } from "vue";
+
+//全局
+const router = useRouter();
+
+// 三秒後跳轉到 news 頁面
+onMounted(() => {
+  setTimeout(() => {
+    router.push({ name: "news" }); // 不管是寫 name 還是 path 都可以
+  }, 3000);
+});
 </script>
 
 <style scoped>

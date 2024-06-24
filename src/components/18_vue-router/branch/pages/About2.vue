@@ -1,11 +1,6 @@
 <template>
   <div class="about">
-    <h2>這是關於</h2>
-    <div>
-      <router-view></router-view>
-      <router-view name="about1"></router-view>
-      <router-view name="about2"></router-view>
-    </div>
+    <h2>這是關於22222</h2>
   </div>
 </template>
 
@@ -16,6 +11,8 @@ import {} from "vue";
 <style scoped>
 .about {
   display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100%;
   color: rgb(85, 84, 84);
   font-size: 18px;

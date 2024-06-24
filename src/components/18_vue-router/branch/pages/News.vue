@@ -8,7 +8,7 @@
           >{{ news.title }}</RouterLink
         > -->
         <!-- 第二種寫法 -->
-        <!-- <RouterLink
+        <RouterLink
           :to="{
             name: 'detail',
             query: {
@@ -18,15 +18,11 @@
             },
           }"
           >{{ news.title }}</RouterLink
-        > -->
-        <!-- 第三種寫法 -->
-        <RouterLink :to="{ name: 'detail', query: news }">{{
-          news.title
-        }}</RouterLink>
+        >
       </li>
     </ul>
     <div class="news-content">
-      <RouterView />
+      <router-view></router-view>
     </div>
   </div>
 </template>

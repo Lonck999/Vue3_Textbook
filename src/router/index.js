@@ -3,6 +3,8 @@ import { createRouter, createWebHistory } from "vue-router";
 // 引入组件
 import Home from "@/components/18_vue-router/branch/pages/Home.vue";
 import About from "@/components/18_vue-router/branch/pages/About.vue";
+import About1 from "@/components/18_vue-router/branch/pages/About1.vue";
+import About2 from "@/components/18_vue-router/branch/pages/About2.vue";
 import News from "@/components/18_vue-router/branch/pages/News.vue";
 import Detail from "@/components/18_vue-router/branch/pages/Detail.vue";
 import NewsParams from "@/components/18_vue-router/branch/pages/NewsParams.vue";
@@ -20,7 +22,11 @@ const router = createRouter({
     {
       name: "about",
       path: "/about",
-      component: About,
+      components: {
+        default: About,
+        about1: About1,
+        about2: About2,
+      },
     },
     {
       name: "news",

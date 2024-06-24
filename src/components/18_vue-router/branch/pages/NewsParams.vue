@@ -8,32 +8,25 @@
           >{{ news.title }}</RouterLink
         > -->
         <!-- 第二種寫法 -->
-        <!-- <router-link
+        <router-link
           :to="{
-            name: 'newsDetailParams',
+            name: 'detail-params',
             params: { id: news.id, title: news.title, content: news.content },
           }"
           >{{ news.title }}</router-link
-        > -->
-        <!-- 第三種寫法 -->
-        <router-link
-          :to="{
-            name: 'newsDetailParams',
-            params: { news },
-          }"
-          >{{ news.title }}</router-link
         >
+        <button @click="openNews(news)">查看新聞</button>
       </li>
     </ul>
     <div class="news-content">
-      <RouterView />
+      <router-view></router-view>
     </div>
   </div>
 </template>
 
 <script setup>
 import { reactive } from "vue";
-import { RouterView } from "vue-router";
+import { RouterView, useRouter } from "vue-router";
 
 const newsList = reactive([
   { id: 1, title: "新聞01", content: "新聞01的內容" },
@@ -42,6 +35,16 @@ const newsList = reactive([
   { id: 4, title: "新聞04", content: "新聞04的內容" },
   { id: 5, title: "新聞05", content: "新聞05的內容" },
 ]);
+
+const router = useRouter();
+
+function openNews(news) {
+  router.push({
+    name: "detail-params",
+    // 這邊寫 params 或 query 都可以，這裡寫 params
+    params: { id: news.id, title: news.title, content: news.content },
+  });
+}
 </script>
 
 <style scoped>

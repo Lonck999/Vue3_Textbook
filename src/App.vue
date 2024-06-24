@@ -61,6 +61,15 @@
     <div>
       <Router />
     </div>
+    <div>
+      <Pinia />
+    </div>
+    <div>
+      <Pages_01_Props />
+    </div>
+    <div>
+      <Pagea_02_CustomEvent />
+    </div>
   </div>
 </template>
 
@@ -83,6 +92,9 @@ import DefineProps from "./components/15_defineProps父傳子/index.vue";
 import Lifecycle from "./components/16_lifecycle/index.vue";
 import Hook from "./components/17_自定義hook/index.vue";
 import Router from "./components/18_vue-router/index.vue";
+import Pinia from "./components/19_pinia/index.vue";
+import Pages_01_Props from "./pages/01_props/Index.vue";
+import Pagea_02_CustomEvent from "./pages/02_custom-event/Index.vue";
 import { reactive } from "vue";
 
 const persons = reactive([
