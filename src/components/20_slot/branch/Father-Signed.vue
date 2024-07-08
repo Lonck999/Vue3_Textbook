@@ -21,10 +21,10 @@
         </template>
       </Category>
       <Category>
-        <template v-slot:header>
+        <template #header>
           <h2>今日電影推薦</h2>
         </template>
-        <template v-slot:s2>
+        <template #s2>
           <video :src="movie" controls></video>
         </template>
       </Category>

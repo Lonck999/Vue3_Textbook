@@ -82,6 +82,9 @@
     <div>
       <Pages_07_ProvideInject />
     </div>
+    <div>
+      <Teleport1 />
+    </div>
   </div>
 </template>
 
@@ -111,6 +114,7 @@ import Pagea_02_CustomEvent from "./pages/02_custom-event/Index.vue";
 import Pagea_04_VModel from "./pages/04_v-model/Index.vue";
 import Pagea_05_Attrs from "./pages/05_$attrs/Index.vue";
 import Pages_07_ProvideInject from "./pages/07_provide＆inject/Index.vue";
+import Teleport1 from "./components/21_teleport/Index.vue";
 import { reactive } from "vue";
 
 const persons = reactive([
